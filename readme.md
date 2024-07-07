@@ -17,7 +17,7 @@ Mainly use to switch different version of some language, like java. This project
 
 1. **添加一个环境变量** (**Add a new environment**)
    
-   `senv add <name> <path>`  
+   `senv add <name> <path>` 
    
    例子：`senv add jdk11 D:\Java\jdk-11.0.13\bin`。
    
