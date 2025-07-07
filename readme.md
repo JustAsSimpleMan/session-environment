@@ -16,27 +16,34 @@ Mainly use to switch different version of some language, like java. This project
 ## 使用 (Usage)
 
 1. **添加一个环境变量** (**Add a new environment**)
-   
+
    `senv add <name> <path>` 
-   
+
    例子：`senv add jdk11 D:\Java\jdk-11.0.13\bin`。
-   
+
    （你需要将路径指定到 `bin` 目录下，你可以指定任何具有可执行文件的路径）
-   
+
    (You need to specify the path to the bin, or other which have executable file you want to execute)
+
 2. **查看变量配置列表** (**List all your environments**)
-   
+
    `senv list` 
+
 3. **删除指定名称的变量配置** (**Remove an existing environment from the SEnv list**)
-   
+
    `senv remove <name>` 
-4. **指定名称改变当前环境变量** (**Change environment for the current session**)
-   
+
+4. **使用已配置的环境变量**（**Use configured environment variables**）
+
+   指定名称改变当前环境变量
+
+   Change environment for the current session
+
    `senv use <name>` 
-   
-   例子：`senv use jdk11`，实际上执行 (Actually executed)：
-   
+
+   例（example）：`senv use jdk11`，实际上执行 (Actually executed)：
+
    ---CMD：`set path=D:\Java\jdk-11.0.13\bin;%path%` 
-   
+
    ---PowerShell：`$Env:PATH="D:\Java\jdk-11.0.13\bin;$Env:PATH"` 
 
